@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif, 'Boutinela Script Regular';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "Blooming Elegant Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/BloomingElegantSans-Regular.otf');
+}
+
+@font-face {
+  font-family: "Boutinela Script Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/BoutinelaScript-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque Regular";
+  font-style: normal;
+  font-weight: 390;
+  src: url("./assets/fonts/BrandonGrotesque-Regular.otf");
+}
+
+
+@font-face {
+  font-family: "Santtuy";
+  font-style: normal;
+  font-weight: 390;
+  src: url("./assets/fonts/SVN-Weekdays Santtuy.otf");
+}
+
+@font-face {
+  font-family: "Janelotus";
+  font-style: normal;
+  font-weight: 390;
+  src: url("./assets/fonts/SVN-Janelotus.otf");
+}
+
+@font-face {
+  font-family: "Secret";
+  font-style: normal;
+  font-weight: 390;
+  src: url("./assets/fonts/SVN-The Secret.ttf");
+}
+
+
+@font-face {
+  font-family: "Storyteller";
+  font-style: normal;
+  font-weight: 390;
+  src: url("./assets/fonts/SVN-Storyteller Script.ttf");
+}
+
+
+@font-face {
+  font-family: "MontereyScript";
+  font-style: normal;
+  font-weight: 390;
+  src: url("./assets/fonts/MontereyScript VH.otf");
+}
