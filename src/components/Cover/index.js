@@ -1,27 +1,56 @@
-import React from 'react'
-
+import React from "react";
+import { Row, Col, Button } from "antd";
+import { Typography } from "antd";
+import bgImg1 from "../../assets/images/header-4.jpg";
+import bgImg2 from "../../assets/images/floating-img.png";
 const Cover = (props) => {
-    const { cover, flower } = props;
-    return (
-        <section id='cover'>
-            <h1 className='cover__title'>
-                Phương Anh
-                <img className='cover__title--img' src={flower} alt=""/>
-                Công Minh
-            </h1>
-            {/* <nav className='cover__nav'>
-                <ul className='cover__nav__menu'>
-                    <li className='cover__nav__menu--item'><a href="#welcome">Welcome</a></li>
-                    <li className='cover__nav__menu--item'><a href="#ourstory">Our Story</a></li>
-                    <li className='cover__nav__menu--item'><a href="events">Events</a></li>
-                    <li className='cover__nav__menu--item'><a href="party">Wedding Party</a></li>
-                </ul>
-            </nav> */}
-            <div className='cover__img'>
-                <img src={cover} alt="" />
-            </div>
-        </section>
-    )
-}
+  const { Title, Paragraph } = Typography;
+  const fontSize = { fontSize: "4rem", color: "darkgoldenrod" };
+  const center = { textAlign: "center", ...fontSize };
+  return (
+    <Row
+      className="cover"
+      justify={"center"}
+      align="middle"
+    >
+      <Col span={24}>
+        <Row>
+          <Col span={24}>
+            <Title className="font--Palmaton" style={center}>
+              Công Minh
+            </Title>
+          </Col>
+          <Col span={24}>
+            <Title className="font--Palmaton" style={center}>
+              &
+            </Title>
+          </Col>
+          <Col span={24}>
+            <Title className="font--Palmaton" style={center}>
+              Phương Anh
+            </Title>
+          </Col>
+          <Col span={24} style={center}>
+            <Paragraph>VÀO HỒI, 8:00 AM</Paragraph>
+          </Col>
+          <Col span={24} style={center}>
+            <Paragraph>NGÀY 29 THÁNG 04 NĂM 2023</Paragraph>
+          </Col>
+          <Col span={24} style={center}>
+            <Paragraph>(TỨC NGÀY 10/03/2023 QUÝ MÃO)</Paragraph>
+          </Col>
+          <Col span={24} style={center}>
+            <Paragraph>
+              Thân mời bạn cùng gia đình đến dự hôn lễ của chúng tôi!
+            </Paragraph>
+          </Col>
+          <Col span={24} style={center}>
+            <Button>Bạn sẽ đến chứ?</Button>
+          </Col>
+        </Row>
+      </Col>
+    </Row>
+  );
+};
 
-export default Cover
+export default Cover;

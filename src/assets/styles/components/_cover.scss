@@ -1,30 +1,9 @@
-#cover {
-    max-height: 100vh;
-
-
-    .cover__title {
-        padding-top: 12vh;
-        @include flex-around;
-        font-family: "Boutinela Script Regular";
-        font-size: 2.5rem;
-        @media max-wid {
-            
-        }
-        text-align: center;
-        line-height: 4;
-        transition: all 1s;
-        transition-delay: 1s;
-
-        &--img {
-            width: 10%;
-        }
-    }
-
-    .cover__img {
-        width: 90%;
-        border: 10px solid #f3d3d2;
-        box-sizing: border-box;
-        box-shadow: 1px 1px 5px #a2b678;
-        margin: 1rem auto;
-    }
+.cover {
+    height: 100vh;
+    background-image: url(../../images/header-4.jpg), url(../../images/floating-img.png);
+    background-size: contain, contain;
+    background-position: center top, bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-blend-mode: multiply;
+    background-color: white;
 }
