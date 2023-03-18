@@ -10,11 +10,13 @@ import Events from "./components/Events";
 import ThankYou from "./components/ThankYou";
 
 import { Layout } from "antd";
+import Intro from "./components/Intro";
 const { Content } = Layout;
 function App() {
   return (
     <Content>
       <Cover />
+      <Intro/>
     </Content>
   );
 }

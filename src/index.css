@@ -35,10 +35,10 @@ code {
 
 
 @font-face {
-  font-family: "Santtuy";
+  font-family: "CutiveMono";
   font-style: normal;
   font-weight: 390;
-  src: url("./assets/fonts/SVN-Weekdays Santtuy.otf");
+  src: url("./assets/fonts/CutiveMono-Regular.ttf");
 }
 
 @font-face {

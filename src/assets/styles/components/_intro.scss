@@ -1,0 +1,15 @@
+.intro {
+    height: 100vh;
+    padding-top: 1.5rem;
+    .img {
+        width: 250px;
+        height: 250px;
+        margin: auto;
+        border-radius: 50%;
+        box-shadow: 1px 1px 4px grey;
+        background-image: url('../../images/image1.JPG');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

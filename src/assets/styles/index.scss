@@ -1,62 +1,92 @@
-@import './reset';
+@import "./reset";
 $base-font-size: 1rem;
 $font-size: (
-    'large': $base-font-size * 3,
-    'medium': $base-font-size * 2,
-    'small': $base-font-size * 3
+  "large": $base-font-size * 3,
+  "medium": $base-font-size * 2,
+  "small": $base-font-size * 3,
 );
 $color: (
-    'primary': #f3d3d2,
-    'secondary': #a2b678,
-    'basic': #fff
+  "primary": #f3d3d2,
+  "secondary": #a2b678,
+  "basic": #fff,
 );
 
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin flex-around {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
 .wrapper {
-    @include flex-center();
-    background-color: #f5b3b329;
-    background-image: url(../images/top.png);
-    background-position: top;
-    background-repeat: no-repeat;
+  @include flex-center();
+  background-color: #f5b3b329;
+  background-image: url(../images/top.png);
+  background-position: top;
+  background-repeat: no-repeat;
 
-    .container {
-
-        // max-width: 900px;
-        margin: auto;
-    }
+  .container {
+    // max-width: 900px;
+    margin: auto;
+  }
 }
 section {
-    padding: 1rem 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center
+  padding: 1rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 img {
-    width: 100%;
+  width: 100%;
 }
 h2 {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 p {
-    line-height: 1.35;
-    font-family: 'Brandon Grotesque Regular';
-    word-spacing: 2px;
-    margin: .5rem 0;
+  line-height: 1.35;
+  font-family: "Brandon Grotesque Regular";
+  word-spacing: 2px;
+  margin: 0.5rem 0;
 }
 
-@import './components/common';
-@import './components/cover';
-@import './components/story';
+blockquote {
+  position: relative;
+  font-family: 'CutiveMono';
+  padding: 2rem;
+  &::before {
+    position: absolute;
+    color: darkgray;
+    font-size: 4rem;
+    width: 4rem;
+    height: 4rem;
+    content: "“";
+    left: -1rem;
+    top: -1rem;
+  }
+  &::after {
+    position: absolute;
+    color: darkgray;
+    font-size: 4rem;
+    width: 4rem;
+    height: 4rem;
+    content: "”";
+    right: 0rem;
+    bottom: 0rem;
+  }
+}
+
+cite {
+  text-align: center;
+  font-family: 'Brandon Grotesque Regular';
+}
+@import "./components/common";
+@import "./components/cover";
+@import "./components/story";
+@import "./components/intro"
