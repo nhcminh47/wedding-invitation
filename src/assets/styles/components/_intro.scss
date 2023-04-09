@@ -7,9 +7,16 @@
         margin: auto;
         border-radius: 50%;
         box-shadow: 1px 1px 4px grey;
-        background-image: url('../../images/image1.JPG');
-        background-size: contain;
+        background-image: url('../../images/TYEM1248.JPG');
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+    }
+    .border {
+        display: inline-block;
+        background-image: url('../../images/border.png');
+        padding: 70px;
+        background-size: contain;
+
     }
 }

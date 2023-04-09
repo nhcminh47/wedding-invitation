@@ -16,7 +16,8 @@ function App() {
   return (
     <Content>
       <Cover />
-      <Intro/>
+      <Intro />
+      {/* <Story /> */}
     </Content>
   );
 }

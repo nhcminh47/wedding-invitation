@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Col, Row } from "antd";
 const Intro = () => {
   return (
-    <Row className="intro" justify={"space-around"} align={'middle'}>
+    <Row className="intro" justify={"space-around"} align={"middle"}>
       <Col md={6} sm={24}>
         <Card
           title="CHÚ RỂ"
@@ -15,13 +15,15 @@ const Intro = () => {
           <cite>NGUYỄN HUỲNH CÔNG MINH</cite>
           <blockquote>
             Gặp được em là điều mà anh cảm thấy trân trọng nhất trọng cuộc đời
-            này. Điều anh mong lúc này là chúng ta sẽ mãi hạnh phúc! Anh yêu em
-            ❤️
+            này. Điều anh mong lúc này là chúng ta sẽ mãi hạnh phúc! <br />
+            Anh yêu em ❤️
           </blockquote>
         </Card>
       </Col>
       <Col md={8} sm={24}>
-        <div className="img"></div>
+        <div className="border">
+          <div className="img"></div>
+        </div>
       </Col>
       <Col md={6} sm={24}>
         <Card
