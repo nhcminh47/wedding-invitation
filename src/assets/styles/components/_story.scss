@@ -2,21 +2,22 @@
 	&__content {
 		@for $i from 1 through 7 {
 			&--image--#{$i} {
-				width: 250px;
-				height: 150px;
+				width: 200px;
+				height: 200px;
 				border: 10px solid whitesmoke;
 				border-bottom: 30px solid whitesmoke;
-				background-position: top center;
+				background-position: left center;
 				background-size: cover;
 				$url: "../../images/story_" +#{$i}+ ".jpg";
 				background-image: url($url);
                 box-shadow: 1px 1px 5px #00000050;
+				margin: auto;
 				&.left {
 					transform: rotate(-4deg);
 					&~img {
 						position: absolute;
 						bottom: 0;
-						right: -40px;
+						right: -10px;
 						width: 150px;
                         transform: rotate(-30deg);
 					}
@@ -26,7 +27,7 @@
 					&~img {
 						position: absolute;
 						bottom: -30px;
-						left: -45px;
+						left: -30px;
 						width: 130px;
 					}
 				}
