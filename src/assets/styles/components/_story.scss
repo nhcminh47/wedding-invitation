@@ -1,7 +1,36 @@
-#story {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.story {
+	&__content {
+		@for $i from 1 through 7 {
+			&--image--#{$i} {
+				width: 250px;
+				height: 150px;
+				border: 10px solid whitesmoke;
+				border-bottom: 30px solid whitesmoke;
+				background-position: top center;
+				background-size: cover;
+				$url: "../../images/story_" +#{$i}+ ".jpg";
+				background-image: url($url);
+                box-shadow: 1px 1px 5px #00000050;
+				&.left {
+					transform: rotate(-4deg);
+					&~img {
+						position: absolute;
+						bottom: 0;
+						right: -40px;
+						width: 150px;
+                        transform: rotate(-30deg);
+					}
+				}
+				&.right {
+					transform: rotate(4deg);
+					&~img {
+						position: absolute;
+						bottom: -30px;
+						left: -45px;
+						width: 130px;
+					}
+				}
+			}
+		}
+	}
 }

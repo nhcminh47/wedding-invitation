@@ -13,13 +13,13 @@ import { Layout } from "antd";
 import Intro from "./components/Intro";
 const { Content } = Layout;
 function App() {
-  return (
-    <Content>
-      <Cover />
-      <Intro />
-      {/* <Story /> */}
-    </Content>
-  );
+	return (
+		<Content style={{ overflow: "hidden" }}>
+			<Cover />
+			<Intro />
+			<Story />
+		</Content>
+	);
 }
 
 export default App;
