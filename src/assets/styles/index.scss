@@ -22,19 +22,7 @@ $color: (
   justify-content: space-around;
   align-items: center;
 }
-@import url('https://fonts.googleapis.com/css?family=Special+Elite');
-.wrapper {
-  @include flex-center();
-  background-color: #f5b3b329;
-  background-image: url(../images/top.png);
-  background-position: top;
-  background-repeat: no-repeat;
-
-  .container {
-    // max-width: 900px;
-    margin: auto;
-  }
-}
+@import url("https://fonts.googleapis.com/css?family=Special+Elite");
 section {
   padding: 1rem 0;
   text-align: center;
@@ -58,7 +46,7 @@ p {
 
 blockquote {
   position: relative;
-  font-family: 'CutiveMono';
+  font-family: "CutiveMono";
   padding: 2rem;
   &::before {
     position: absolute;
@@ -84,9 +72,9 @@ blockquote {
 
 cite {
   text-align: center;
-  font-family: 'Brandon Grotesque Regular';
+  font-family: "Brandon Grotesque Regular";
 }
 @import "./components/common";
 @import "./components/cover";
 @import "./components/story";
-@import "./components/intro"
+@import "./components/intro";

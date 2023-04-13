@@ -1,37 +1,37 @@
 .story {
-	&__content {
-		@for $i from 1 through 7 {
-			&--image--#{$i} {
-				width: 200px;
-				height: 200px;
-				border: 10px solid whitesmoke;
-				border-bottom: 30px solid whitesmoke;
-				background-position: left center;
-				background-size: cover;
-				$url: "../../images/story_" +#{$i}+ ".jpg";
-				background-image: url($url);
-                box-shadow: 1px 1px 5px #00000050;
-				margin: auto;
-				&.left {
-					transform: rotate(-4deg);
-					&~img {
-						position: absolute;
-						bottom: 0;
-						right: -10px;
-						width: 150px;
-                        transform: rotate(-30deg);
-					}
-				}
-				&.right {
-					transform: rotate(4deg);
-					&~img {
-						position: absolute;
-						bottom: -30px;
-						left: -30px;
-						width: 130px;
-					}
-				}
-			}
-		}
-	}
+  &__content {
+    @for $i from 1 through 7 {
+      &--image--#{$i} {
+        width: 200px;
+        height: 200px;
+        border: 10px solid whitesmoke;
+        border-bottom: 30px solid whitesmoke;
+        background-position: left center;
+        background-size: cover;
+        $url: "../../images/story_" + #{$i} + ".jpg";
+        background-image: url($url);
+        box-shadow: 1px 1px 5px #00000050;
+        margin: auto;
+        &.left {
+          transform: rotate(-4deg);
+          & ~ img {
+            position: absolute;
+            bottom: 0;
+            right: -10px;
+            width: 150px;
+            transform: rotate(-30deg);
+          }
+        }
+        &.right {
+          transform: rotate(4deg);
+          & ~ img {
+            position: absolute;
+            bottom: -30px;
+            left: -30px;
+            width: 130px;
+          }
+        }
+      }
+    }
+  }
 }

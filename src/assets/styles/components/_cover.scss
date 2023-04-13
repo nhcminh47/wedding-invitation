@@ -1,9 +1,8 @@
 .cover {
     height: 100vh;
-    background-image: url(../../images/header-4.jpg), url(../../images/floating-img.png);
-    background-size: contain, contain;
+    background-image: url('../../images/background_header.png'), url('../../images/background_footer.png');
+    background-size: cover, cover;
     background-position: center top, bottom;
     background-repeat: no-repeat, no-repeat;
     background-blend-mode: multiply;
-    background-color: white;
 }

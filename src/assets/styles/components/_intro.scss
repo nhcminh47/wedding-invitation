@@ -13,10 +13,12 @@
         background-position: center;
     }
     .border {
-        display: inline-block;
+        display: block;
         background-image: url('../../images/border.png');
         padding: 70px;
         background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
 
     }
 }
