@@ -12,7 +12,7 @@ import Intro from "./components/Intro";
 const { Content } = Layout;
 function App() {
 	return (
-		<Content style={{ overflowX: "hidden" }}>
+		<Content>
 			<Cover />
 			<Intro />
 			<Story />

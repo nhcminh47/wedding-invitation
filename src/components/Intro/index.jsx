@@ -3,7 +3,7 @@ import { Card, Col, Row } from "antd";
 const Intro = () => {
   return (
     <Row className="intro" justify={"space-around"} align={"middle"}>
-      <Col lg={6}  sm={24}>
+      <Col lg={7}  sm={24}>
         <Card
           title="CHÚ RỂ"
           bordered={false}
@@ -20,12 +20,12 @@ const Intro = () => {
           </blockquote>
         </Card>
       </Col>
-      <Col lg={12} sm={24}>
+      <Col lg={9} sm={24}>
         <div className="border">
           <div className="img"></div>
         </div>
       </Col>
-      <Col lg={6}  sm={24}>
+      <Col lg={7}  sm={24}>
         <Card
           title="CÔ DÂU"
           bordered={false}
