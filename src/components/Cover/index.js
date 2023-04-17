@@ -1,51 +1,72 @@
 import React from "react";
 import { Row, Col, Button } from "antd";
 import { Typography } from "antd";
-import bgImg1 from "../../assets/images/header-4.jpg";
-import bgImg2 from "../../assets/images/floating-img.png";
 const Cover = (props) => {
-  const { Title, Paragraph } = Typography;
-  const fontSize = { fontSize: "4rem", color: "darkgoldenrod" };
+  const { Title, Text } = Typography;
+  const fontSize = {
+    fontSize: "2rem",
+    color: "darkgoldenrod",
+    letterSpacing: "5px",
+  };
   const center = { textAlign: "center", ...fontSize };
   return (
-    <Row
-      className="cover"
-      justify={"center"}
-      align="middle"
-    >
-      <Col span={24}>
-        <Row>
+    <Row className="cover bg--img" justify={"center"} align="middle">
+      <Col span={22}>
+        <Row gutter={[0,20]}>
           <Col span={24}>
-            <Title className="font--Palmaton" style={center}>
+            <Title className="font--MotherLand" style={{ ...center, marginBottom: "0" }}>
               Công Minh
             </Title>
           </Col>
           <Col span={24}>
-            <Title className="font--Palmaton" style={center}>
+            <Title
+              className="font--MotherLand"
+              style={{ ...center, marginBottom: "0" }}
+            >
               &
             </Title>
           </Col>
           <Col span={24}>
-            <Title className="font--Palmaton" style={center}>
+            <Title className="font--MotherLand" style={{ ...center, marginBottom: "0" }}>
               Phương Anh
             </Title>
           </Col>
-          <Col span={24} style={center}>
-            <Paragraph>VÀO HỒI, 8:00 AM</Paragraph>
+          <Col span={24}>
+            <center>
+              <Text className="font--lora" strong>
+                VÀO HỒI, 8:00 AM
+              </Text>
+            </center>
           </Col>
-          <Col span={24} style={center}>
-            <Paragraph>NGÀY 29 THÁNG 04 NĂM 2023</Paragraph>
+          <Col span={24}>
+            <center>
+              <Text className="font--lora" strong>
+                NGÀY 29 THÁNG 04 NĂM 2023
+              </Text>
+            </center>
           </Col>
-          <Col span={24} style={center}>
-            <Paragraph>(TỨC NGÀY 10/03/2023 QUÝ MÃO)</Paragraph>
+          <Col span={24}>
+            <center>
+              <Text className="font--lora" strong>
+                TỨC NGÀY 10/03/2023 QUÝ MÃO
+              </Text>
+            </center>
           </Col>
-          <Col span={24} style={center}>
-            <Paragraph>
-              Thân mời bạn cùng gia đình đến dự hôn lễ của chúng tôi!
-            </Paragraph>
+          <Col span={24}>
+            <center>
+              <Text className="font--lora" strong italic>
+                Thân mời bạn cùng gia đình đến <br/> dự hôn lễ của chúng tôi!
+              </Text>
+            </center>
           </Col>
-          <Col span={24} style={center}>
-            <Button>Bạn sẽ đến chứ?</Button>
+          <Col span={24}>
+            <center>
+              <Button>
+                <Text className="font--lora" strong>
+                  BẠN SẼ ĐẾN CHỨ
+                </Text>
+              </Button>
+            </center>
           </Col>
         </Row>
       </Col>

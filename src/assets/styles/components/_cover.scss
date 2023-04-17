@@ -1,8 +1,6 @@
 .cover {
-    height: 100vh;
-    background-image: url('../../images/background_header.png'), url('../../images/background_footer.png');
-    background-size: cover, cover;
-    background-position: center top, bottom;
-    background-repeat: no-repeat, no-repeat;
-    background-blend-mode: multiply;
+    min-height: 100vh;
+    .font--lora {
+        font-family: 'Lora';
+    }
 }

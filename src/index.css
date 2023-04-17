@@ -13,10 +13,10 @@ code {
 }
 
 @font-face {
-  font-family: "Blooming Elegant Sans Regular";
+  font-family: 'MotherLand';
   font-style: normal;
-  font-weight: 400;
-  src: url('./assets/fonts/BloomingElegantSans-Regular.otf');
+  font-weight: 500;
+  src: url("./assets/fonts/NVN-Motherland-Signature.ttf");
 }
 
 @font-face {
@@ -29,44 +29,54 @@ code {
 @font-face {
   font-family: "Brandon Grotesque Regular";
   font-style: normal;
-  font-weight: 390;
-  src: url("./assets/fonts/BrandonGrotesque-Regular.otf");
+  font-weight: 400;
+  src: url("./assets/fonts/BrandonGrotesque-Regular-Regular.otf");
 }
-
-
 @font-face {
   font-family: "CutiveMono";
   font-style: normal;
-  font-weight: 390;
+  font-weight: 400;
   src: url("./assets/fonts/CutiveMono-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Janelotus";
+  font-family: "Lora";
   font-style: normal;
-  font-weight: 390;
-  src: url("./assets/fonts/SVN-Janelotus.otf");
+  font-weight: 400;
+  src: url(./assets/fonts/Lora-Regular.ttf);
 }
 
 @font-face {
-  font-family: "Secret";
-  font-style: normal;
-  font-weight: 390;
-  src: url("./assets/fonts/SVN-The Secret.ttf");
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 400;
+  src: url(./assets/fonts/Lora-Italic.ttf);
 }
 
-
 @font-face {
-  font-family: "Storyteller";
+  font-family: "Lora";
   font-style: normal;
-  font-weight: 390;
-  src: url("./assets/fonts/SVN-Storyteller Script.ttf");
+  font-weight: bold;
+  src: url(./assets/fonts/Lora-Bold.ttf);
 }
 
+@font-face {
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: bold;
+  src: url(./assets/fonts/Lora-BoldItalic.ttf);
+}
 
 @font-face {
-  font-family: "MontereyScript";
+  font-family: "Lora";
   font-style: normal;
-  font-weight: 390;
-  src: url("./assets/fonts/MontereyScript VH.otf");
+  font-weight: 500;
+  src: url(./assets/fonts/Lora-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 500;
+  src: url(./assets/fonts/Lora-MediumItalic.ttf);
 }

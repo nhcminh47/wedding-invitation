@@ -1,21 +1,55 @@
 .dv__img {
-    width: 5rem;
-    margin: auto;
+  width: 5rem;
+  margin: auto;
 }
 
 .dv__img2 {
-    width: 50%;
-    margin: 1rem auto;
+  width: 50%;
+  margin: 1rem auto;
 }
 
 .sub__title {
-    font-family: "Boutinela Script Regular";
-    font-size: 2rem;
-    margin: 1rem 0;
-    line-height: 2;
+  font-family: "Boutinela Script Regular";
+  font-size: 2rem;
+  margin: 1rem 0;
+  line-height: 2;
 }
 
 .font--Palmaton {
-    font-family: 'Palmaton';
-    font-size: 2rem;
+  font-family: "Palmaton";
+  font-size: 2rem;
+}
+
+.font--MotherLand {
+  font-family: "MotherLand";
+}
+
+.font--Lora {
+  font-family: "Lora";
+}
+
+.bg--img {
+  background-image: url("../../images/background_header_desktop.png"),
+    url("../../images/background_footer_desktop.png");
+  background-size: contain, contain;
+
+  @media only screen and (max-width: 576px) {
+    background-image: url("../../images/background_header.png"),
+      url("../../images/background_footer.png");
+    &.repeat {
+      background-image: url("../../images/background_footer.png");
+    }
+  }
+
+  background-position: center top, center bottom;
+  background-repeat: no-repeat, no-repeat;
+
+  &.repeat {
+    background-image: url("../../images/background_repeat.png");
+    background-position: bottom;
+    background-repeat: repeat-y;
+  }
+
+  background-blend-mode: screen;
+  background-color: rgb(255 242 242 / 50%);
 }

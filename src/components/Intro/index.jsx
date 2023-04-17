@@ -1,18 +1,19 @@
 import React from "react";
-import { Card, Col, Row } from "antd";
+import { Card, Col, Row, Typography } from "antd";
 const Intro = () => {
   return (
-    <Row className="intro" justify={"space-around"} align={"middle"}>
-      <Col lg={7}  sm={24}>
+    <Row className="intro bg--img repeat" justify={"space-around"} align={"middle"}>
+      <Col lg={7} sm={24}>
         <Card
-          title="CHÚ RỂ"
+          title={<cite>CHÚ RỂ</cite>}
           bordered={false}
           style={{
             textAlign: "center",
             boxShadow: "none",
+            background: "none",
           }}
         >
-          <cite>NGUYỄN HUỲNH CÔNG MINH</cite>
+          <Typography.Text className="name font--MotherLand">Nguyễn Huỳnh Công Minh</Typography.Text>
           <blockquote>
             Gặp được em là điều mà anh cảm thấy trân trọng nhất trọng cuộc đời
             này. Điều anh mong lúc này là chúng ta sẽ mãi hạnh phúc! <br />
@@ -25,16 +26,19 @@ const Intro = () => {
           <div className="img"></div>
         </div>
       </Col>
-      <Col lg={7}  sm={24}>
+      <Col lg={7} sm={24}>
         <Card
-          title="CÔ DÂU"
+          title={<cite>CÔ DÂU</cite>}
           bordered={false}
           style={{
             textAlign: "center",
             boxShadow: "none",
+            background: "none",
           }}
         >
-          <cite>PHẠM THỊ PHƯƠNG ANH</cite>
+          <Typography.Text className="name font--MotherLand">
+            Phạm Thị Phương Anh
+          </Typography.Text>
           <blockquote>
             Gặp được anh là điều mà em cảm thấy trân trọng nhất trọng cuộc đời
             này. Điều em mong lúc này là chúng ta sẽ mãi hạnh phúc! Em yêu anh

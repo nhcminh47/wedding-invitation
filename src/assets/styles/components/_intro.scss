@@ -1,24 +1,59 @@
 .intro {
-    min-height: 100vh;
-    // padding-top: 1.5rem;
-    .img {
-        width: 250px;
-        height: 250px;
-        margin: auto;
-        border-radius: 50%;
-        box-shadow: 1px 1px 4px grey;
-        background-image: url('../../images/TYEM1248.JPG');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+  min-height: 100vh;
+  // padding-top: 1.5rem;
+  .img {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px grey;
+    background-image: url("../../images/TYEM1248.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .border {
+    display: block;
+    background-image: url("../../images/border.png");
+    padding: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  blockquote {
+    position: relative;
+    font-family: "Lora";
+    padding: 2rem;
+    &::before {
+      position: absolute;
+      color: darkgray;
+      font-size: 4rem;
+      width: 4rem;
+      height: 4rem;
+      content: "“";
+      left: -1rem;
+      top: -1rem;
     }
-    .border {
-        display: block;
-        background-image: url('../../images/border.png');
-        padding: 70px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
+    &::after {
+      position: absolute;
+      color: darkgray;
+      font-size: 4rem;
+      width: 4rem;
+      height: 4rem;
+      content: "”";
+      right: 0rem;
+      bottom: 0rem;
+    }
+  }
 
-    }
+  cite {
+    text-align: center;
+    font-family: "Lora";
+  }
+
+  .name{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: darkgoldenrod;
+  }
 }
