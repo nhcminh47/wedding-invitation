@@ -2,8 +2,8 @@ import React from "react";
 import { Card, Col, Row, Typography } from "antd";
 const Intro = () => {
   return (
-    <Row className="intro bg--img repeat" justify={"space-around"} align={"middle"}>
-      <Col lg={7} sm={24}>
+    <Row id="intro" className="intro" justify={"space-around"} align={"middle"}>
+      <Col className="bg--img repeat2" lg={7} sm={24}>
         <Card
           title={<cite>CHÚ RỂ</cite>}
           bordered={false}
@@ -13,7 +13,9 @@ const Intro = () => {
             background: "none",
           }}
         >
-          <Typography.Text className="name font--MotherLand">Nguyễn Huỳnh Công Minh</Typography.Text>
+          <Typography.Text className="name font--MotherLand">
+            Nguyễn Huỳnh Công Minh
+          </Typography.Text>
           <blockquote>
             Gặp được em là điều mà anh cảm thấy trân trọng nhất trọng cuộc đời
             này. Điều anh mong lúc này là chúng ta sẽ mãi hạnh phúc! <br />
@@ -26,7 +28,7 @@ const Intro = () => {
           <div className="img"></div>
         </div>
       </Col>
-      <Col lg={7} sm={24}>
+      <Col className="bg--img repeat2" lg={7} sm={24}>
         <Card
           title={<cite>CÔ DÂU</cite>}
           bordered={false}

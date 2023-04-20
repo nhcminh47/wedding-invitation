@@ -48,8 +48,14 @@
     background-image: url("../../images/background_repeat.png");
     background-position: bottom;
     background-repeat: repeat-y;
+    background-size: 100%;
   }
-
+  &.repeat2 {
+    background-image: url("../../images/background_norepeat.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
   background-blend-mode: screen;
   background-color: rgb(255 242 242 / 50%);
 }

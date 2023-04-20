@@ -6,7 +6,7 @@ function Story(props) {
   const { flower } = props;
   const imgArr = [1, 2, 3, 4, 5, 6, 7];
   return (
-    <Row className="bg--img repeat" gutter={[0, 20]} justify="center" align="middle">
+    <Row id="story" className="bg--img repeat" gutter={[0, 20]} justify="center" align="middle">
       <Col span={22}>
         <Row gutter={[20, 20]} align="middle" justify="center">
           <Col span={24}>

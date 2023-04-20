@@ -14,11 +14,12 @@ $color: (
   font-size: 100%;
   font-family: "Lora";
 }
-
+body {
+  background-color: #fff8f8;
+}
 img {
   width: 100%;
 }
-
 
 @import "./components/common";
 @import "./components/cover";

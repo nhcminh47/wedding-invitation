@@ -10,7 +10,7 @@ const Cover = (props) => {
   };
   const center = { textAlign: "center", ...fontSize };
   return (
-    <Row className="cover bg--img" justify={"center"} align="middle">
+    <Row id="cover" className="cover bg--img" justify={"center"} align="middle">
       <Col span={22}>
         <Row gutter={[0,20]}>
           <Col span={24}>
